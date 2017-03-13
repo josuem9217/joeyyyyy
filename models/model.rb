@@ -16,7 +16,7 @@ class Output
     
     def get_syn(split_input)
         split_input.each { |word| 
-        pp syn(word)["noun"]
+        pp syn(word)["noun"].first.last.last
         }
     end
     
