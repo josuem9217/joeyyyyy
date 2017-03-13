@@ -1,12 +1,12 @@
-html{
-        background-color: #ebf4ec;
-      }
-h1{
-        font-family:friendsreg;
-        src:url
+body{
+        background-color: skyblue;
       }
       
-      @font-face {
-  font-family: Palace;
-  src: url('fonts/Palace.otf');
- }
+     
+h1{
+        font-family: 'Josefin Slab', serif;
+      }
+      
+    
+ 
+ 
