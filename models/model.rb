@@ -10,7 +10,7 @@ require 'pp'
 class Output
     attr_reader :output
     def initialize(input)
-        split_input = input.split(/\W+/)
+        split_input = input.split(' ')
         get_syn(split_input)
         
         
