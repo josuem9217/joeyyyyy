@@ -10,7 +10,9 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   
-  post action="/" do 
+  post '/result' do
+    @string = params[:string]
+    erb :result
+  end 
     
-  end
 end
