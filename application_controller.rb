@@ -15,8 +15,8 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/result' do
-    @string = params[:string]
-    # @output = Output.new("#{@string}")
+    input = params[:string]
+    @string = Output.new(input)
     erb :result
   end 
     
