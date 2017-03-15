@@ -5,7 +5,22 @@ body{
 h1{
         font-family: 'Josefin Slab', serif;
       }
+
+/*IDK WHY THESE DOESNT WORK
+  BUT IT WORKS IN STYLE TAGS IN INDEX ERB*/
       
-    
- 
- 
+.inputText{
+        text-align: center;
+        padding: 10px;   
+}
+
+.outputText{
+        text-align: center;
+        padding: 10px; 
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
