@@ -42,7 +42,7 @@ class Output
 
 end
  
-Output.new("Hello")
+
  
 
  
