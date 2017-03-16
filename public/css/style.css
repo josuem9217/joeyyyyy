@@ -1,5 +1,6 @@
 body{
         background-color: #ebf4ec;
+        cursor: url("joeyFace.png"), auto;
       }
 
 h1{
@@ -23,4 +24,10 @@ img {
     margin: auto;
     padding: 20px; 
 
+}
+
+input:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
 }
