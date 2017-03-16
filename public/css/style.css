@@ -3,7 +3,7 @@ body{
         cursor: url("joeyFace.png"), auto;
       }
 
-h1{
+h1,h4,h3{
         font-family: 'Josefin Slab', serif;
       }
 
@@ -24,4 +24,10 @@ img {
     margin: auto;
     padding: 20px; 
 
+}
+
+input:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
 }

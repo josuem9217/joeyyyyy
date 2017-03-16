@@ -1,6 +1,6 @@
-require 'net/http'
-require 'json'
-require 'pp' 
+# require 'net/http'
+# require 'json'
+# require 'pp' 
 
 # url = 'http://words.bighugelabs.com/api/2/e599e5fb8e6f9fc0ee92f7299cd1c834/word/json'
 # uri = URI(url)
@@ -10,7 +10,7 @@ require 'pp'
 class Output
     attr_reader :output
     def initialize(input)
-        split_input = input.split('/\W+/ ')
+        split_input = input.split('/\W+/')
         get_syn(split_input)
         
         
@@ -28,9 +28,9 @@ class Output
             split_output << word
         end
         }
-        @output=split_output.join(" ")
+        split_output.join(" ")
         
-        # @output =JSON.parse(response)["noun"].first.last.last
+        #@output =JSON.parse(response)["noun"].first.last.last
     end
     
     def syn(word)
@@ -42,7 +42,17 @@ class Output
 
 end
 
-pp Output.new("Hello")
+# pp Output.new("Hello")
  
 
  
+
+class Trump
+     attr_reader :msg
+     def initialize()
+        url = 'https://api.whatdoestrumpthink.com/api/v1/quotes/random'
+        uri = URI(url)
+        response = Net::HTTP.get(uri)
+       @msg = JSON.parse(response)["message"]
+     end
+end
