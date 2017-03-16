@@ -25,6 +25,7 @@ img {
     padding: 20px; 
 
 }
+
 input:focus { 
     outline: none !important;
     border-color: #719ECE;
