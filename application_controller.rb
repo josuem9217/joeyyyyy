@@ -16,6 +16,7 @@ class ApplicationController < Sinatra::Base
   
   post '/result' do
     input = params[:string]
+    # truncate(:string, length: 5, separator: ' ')
     @string = Output.new(input)
     erb :result
   end 

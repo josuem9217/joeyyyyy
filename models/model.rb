@@ -41,8 +41,8 @@ class Output
     end
 
 end
- 
-Output.new("Hello")
+
+pp Output.new("Hello")
  
 
  
