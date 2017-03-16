@@ -30,7 +30,7 @@ class Output
         }
         split_output.join(" ")
         
-        # @output =JSON.parse(response)["noun"].first.last.last
+        #@output =JSON.parse(response)["noun"].first.last.last
     end
     
     def syn(word)
@@ -42,7 +42,12 @@ class Output
 
 end
  
-Output.new("Hello")
- 
-
- 
+ class Trump
+     attr_reader :msg
+     def initialize()
+        url = 'https://api.whatdoestrumpthink.com/api/v1/quotes/random'
+        uri = URI(url)
+        response = Net::HTTP.get(uri)
+       @msg = JSON.parse(response)["message"]
+     end
+end

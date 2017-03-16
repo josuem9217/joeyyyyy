@@ -3,7 +3,7 @@ body{
         cursor: url("joeyFace.png"), auto;
       }
 
-h1{
+h1,h4,h3{
         font-family: 'Josefin Slab', serif;
       }
 

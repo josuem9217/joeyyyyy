@@ -11,12 +11,14 @@
     <script src="js/script.js"></script>
     <!-- Josefin+Slab -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
-    
+    <!--Clicker Script-->
+    <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
   </head>
   <body>
     
     <div class="inputText">
       <h1>How you doin'?</h1>
+      <h3>Input something to<span style="font-family: 'Clicker Script', cursive;"> Smartify</span></h3>
         <form method="post" action="/result">
         <input type="text" name="string" autofocus><br>
         <button type="submit" value="submit">Submit</button>
@@ -25,7 +27,7 @@
     <img src ="hyd.gif" height="25%" width="25%">
     <div class="inputText">
       <h3>Can't think of anything to make sound more intelegent? Try these</h3>
-      <h4>Last week, I laid out my plan to bring jobs back to our country. Yesterday, I laid out my plan to defeat Radical Islamic Terrorism. Tonight, I am going to talk about how to make our communities safe again from crime and lawlessness.</h3>
+    <p>"<cite><%= @trump.msg %></cite>"<br><b>- Donald J. Trump</b></p>
     </div>
   </body>
 </html>
