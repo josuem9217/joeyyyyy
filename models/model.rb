@@ -10,7 +10,7 @@ require 'pp'
 class Output
     attr_reader :output
     def initialize(input)
-        split_input = input.split(' ')
+        split_input = input.split("")
         get_syn(split_input)
         
         
@@ -28,7 +28,7 @@ class Output
             split_output << word
         end
         }
-        @output=split_output.join(" ")
+        split_output.join(" ")
         
         # @output =JSON.parse(response)["noun"].first.last.last
     end
