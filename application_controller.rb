@@ -7,7 +7,7 @@ require_relative 'models/model.rb'
 class ApplicationController < Sinatra::Base
 
   get '/' do
-    @trump=Trump.new
+    @trump=Trump.new #gets random trump quote
     erb :index
     
   end
@@ -17,9 +17,9 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/result' do
-    input = params[:string]
+    input = params[:string] #grabs users input
     # input = input.truncate(5, separator: ' ')
-    @string = Output.new(input)
+    @string = Output.new(input) #sends user input to class that returns smartified link
     erb :result
   end 
     

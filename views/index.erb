@@ -14,13 +14,14 @@
     <!--Clicker Script-->
     <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
     <script>
+    // count the characters of the users input every time they type
        function countChar(val) {
     count=val.value.split(" ").length
     
-    $("#count").html(count)
+    $("#count").html(count) 
         if (count>25){
-          val.disabled=true;
-          $("#sub_button").hide()
+          val.disabled=true; //stops you from typing
+          $("#sub_button").hide() //removes the submit b
         }
      
       };
