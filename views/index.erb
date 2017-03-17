@@ -13,6 +13,18 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
     <!--Clicker Script-->
     <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
+    <script>
+       function countChar(val) {
+    count=val.value.split(" ").length
+    
+    $("#count").html(count)
+        if (count>25){
+          val.disabled=true;
+          button.style.display = "none"
+        }
+     
+      };
+    </script>
   </head>
   <body>
     
@@ -20,8 +32,11 @@
       <h1>How you doin'?</h1>
       <h3>Input something to<span style="font-family: 'Clicker Script', cursive;"> Smartify</span></h3>
         <form method="post" action="/result">
-        <input type="text" name="string" autofocus><br>
-        <button type="submit" value="submit">Submit</button>
+  <h3>Do not exceed 25 words</h3>
+  <h3>Word Count:<span id="count"></span></h3>
+        <input type="text" id="text_input" name="string" autofocus onkeyup="countChar(this)"><br>
+        <button type="submit" value="submit" >Submit</button>
+   
       </form>
     </div>
     <img src ="hyd.gif" height="25%" width="25%">
