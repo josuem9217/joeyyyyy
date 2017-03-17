@@ -20,7 +20,7 @@
     $("#count").html(count)
         if (count>25){
           val.disabled=true;
-          button.style.display = "none"
+          $("#sub_button").hide()
         }
      
       };
@@ -35,7 +35,7 @@
   <h3>Do not exceed 25 words</h3>
   <h3>Word Count:<span id="count"></span></h3>
         <input type="text" id="text_input" name="string" autofocus onkeyup="countChar(this)"><br>
-        <button type="submit" value="submit" >Submit</button>
+        <button id="sub_button" type="submit" value="submit" >Submit</button>
    
       </form>
     </div>
