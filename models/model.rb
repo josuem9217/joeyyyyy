@@ -10,12 +10,19 @@ require 'pp'
 class Output
     attr_reader :output
     def initialize(input)
+        input.length
+        # truncate(input,10)
         split_input = input.split(/[\s,']/)
         get_syn(split_input)
         
         
     end
-    
+
+
+    # def truncate(string, max)
+    #         string.length > max ? "#{string[0...max]}..." : string
+    # end
+
     def get_syn(split_input)
         split_output=[]
         split_input.each { |word| 
