@@ -7,9 +7,6 @@ h1,h4,h3{
         font-family: 'Josefin Slab', serif;
       }
 
-/*IDK WHY THESE DOESNT WORK
-  BUT IT WORKS IN STYLE TAGS IN INDEX ERB*/
-      
 .inputText{
         text-align: center;
         padding: 10px;   
