@@ -34,7 +34,7 @@ class Output
     end
      
   
-
+ 
 end
 
 # pp Output.new("Hello")
