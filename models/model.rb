@@ -32,7 +32,7 @@ class Output
         
         #@output =JSON.parse(response)["noun"].first.last.last
     end
-    
+     
   
 
 end
