@@ -36,10 +36,6 @@ class Output
   
  
 end
-
-# pp Output.new("Hello")
- 
-
  
 
 class Trump
@@ -52,3 +48,4 @@ class Trump
        @msg = JSON.parse(response)["message"]
      end
 end
+
