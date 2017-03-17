@@ -28,24 +28,20 @@ class Output
             split_output << word
         end
         }
-        split_output.join(" ")
+        @output=split_output.join(" ")
         
         #@output =JSON.parse(response)["noun"].first.last.last
     end
-    
-    def syn(word)
-        url = "http://words.bighugelabs.com/api/2/e599e5fb8e6f9fc0ee92f7299cd1c834/#{input}/json"
-        uri = URI(url)
-        response = Net::HTTP.get(uri)
-        JSON.parse(response)
-    end
-
+     
+  
+ 
 end
  
 
 class Trump
+
      attr_reader :msg
-     def initialize()
+     def initialize
         url = 'https://api.whatdoestrumpthink.com/api/v1/quotes/random'
         uri = URI(url)
         response = Net::HTTP.get(uri)
